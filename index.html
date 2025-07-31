@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coffee Corner</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">☕ Web Coffee</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-text" data-aos="fade-up">
+      <h2>Welcome to our shop</h2>
+      <p>Find your perfect cup at Coffee Corner</p>
+      <a href="#menu" class="btn">See Menu</a>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="section" data-aos="fade-up">
+  <h3 class="section-title">Our Menu</h3>
+  <div class="menu-grid">
+    <div class="menu-item">
+      <img src="../img/Espresso.jpg" alt="Espresso">
+      <h4>Espresso</h4>
+      <p>$2.00</p>
+    </div>
+    <div class="menu-item">
+      <img src="../img/latte.jpg" alt="Latte">
+      <h4>Latte</h4>
+      <p>$3.50</p>
+    </div>
+    <div class="menu-item">
+      <img src="../img/Cappuchino.jpg" alt="Cappuccino">
+      <h4>Cappuccino</h4>
+      <p>$3.00</p>
+    </div>
+    <div class="menu-item">
+      <img src="../img/Cold brew.jpg" alt="Cold Brew">
+      <h4>Cold Brew</h4>
+      <p>$4.00</p>
+    </div>
+  </div>
+</section>
+
+  <!-- About Section -->
+  <section id="about" class="section light" data-aos="fade-right">
+    <h3 class="section-title">About Us</h3>
+    <p class="about-text">
+      We are passionate about bringing you the finest coffee and cozy atmosphere to brighten your day. Our beans are sourced from the best farms around the world and brewed by baristas who love what they do.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section" data-aos="fade-left">
+    <h3 class="section-title">Contact Us</h3>
+    <form id="contactForm" class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send</button>
+      <p id="formMessage" class="form-message"></p>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Web Coffee. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="script.js"></script>
+</body>
+</html>
